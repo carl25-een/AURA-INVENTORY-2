@@ -3,23 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>AURA — Inventory</title>
+<title>AURA — Inventory Management</title>
 <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-<header class="topbar">
-  <div class="brand">
-    <span class="wordmark">AURA</span>
-    <span class="brandsub">Inventory</span>
-  </div>
-  <nav id="mainNav">
-    <button class="navbtn" data-nav="dashboard" onclick="showView('dashboard')">Dashboard</button>
-    <button class="navbtn" data-nav="products" onclick="showView('products')">Products</button>
-    <button class="navbtn" data-nav="movements" onclick="showView('movements')">Movements</button>
-  </nav>
-</header>
-<div class="demobanner">Sample inventory — these are demo products so you can see the system working. Add AURA's real products to replace them.</div>
-<main id="app"><p class="muted" style="padding:1rem">Loading…</p></main>
+<div id="root"><p class="muted" style="padding:2rem">Loading AURA Inventory…</p></div>
+<div id="modalRoot"></div>
+<div id="toastRoot" aria-live="polite"></div>
 <script src="/app.js"></script>
 </body>
 </html>

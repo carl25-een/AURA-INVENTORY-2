@@ -38,5 +38,18 @@ Stock levels are **never edited directly** — only via adjustments — so the m
 3. **Sales import** — record a day's sales in bulk (paste or CSV) instead of one-by-one adjustments.
 4. **Multi-location stock** — per-store quantities (e.g. shop vs storage) if AURA opens more than one spot.
 5. **Supplier & reorder view** — "what to reorder" list driven by low-stock alerts and cost prices.
-6. **Database upgrade** — SQLite when concurrency grows; the store's shape keeps this contained.
-7. **Staff accounts & roles** — if more people need different permissions than the single optional PIN.
+6. **Database upgrade** — SQLite/Postgres when concurrency grows; the v2 schema (ARCHITECTURE.md) maps 1:1 to SQL tables.
+
+## 7. v2 — professional upgrade (shipped 2026-11-09)
+
+Sections 2–3 above describe v1. v2 keeps the size-level stock core and adds,
+per the professional-system brief: suppliers; purchases (multi-line,
+auto-stock, receipts, payment status); sales (multi-line, discounts,
+payment methods, receipts, COGS snapshots); alerts (low / out / expiry /
+unusual adjustments); reports (inventory, movements, purchases, sales,
+valuation, COGS & gross profit, damaged & expired, supplier performance)
+with date filters and CSV/print export; user accounts with Admin / Manager /
+Staff roles, scrypt password hashing, audit log and JSON backups; a new
+sidebar admin UI with dashboard charts. Design in `ARCHITECTURE.md`;
+verified by `test/smoke.js` (56 end-to-end checks). v1 data migrates
+automatically (products + stock preserved).
