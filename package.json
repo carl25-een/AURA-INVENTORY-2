@@ -1,0 +1,1 @@
+{"description":"Inventory system for AURA, a clothing brand — products, size-level stock, movements and low-stock alerts. Zero-dependency Node.js.","main":"server.js","name":"aura-inventory","private":true,"scripts":{"start":"node server.js"},"version":"1.0.0"}
