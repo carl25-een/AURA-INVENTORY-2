@@ -89,16 +89,16 @@ function renderLogin(errMsg) {
 }
 
 const NAV = [
-  ['dashboard', '📊 Dashboard'],
-  ['products', '👗 Products'],
-  ['stock', '🔁 Stock'],
-  ['purchases', '🧾 Purchases'],
-  ['sales', '🛍️ Sales'],
-  ['suppliers', '🏭 Suppliers'],
-  ['alerts', '🔔 Alerts'],
-  ['reports', '📈 Reports'],
-  ['users', '👥 Users'],
-  ['audit', '🛡️ Audit Log'],
+  ['dashboard', ' Dashboard'],
+  ['products', ' Products'],
+  ['stock', ' Stock'],
+  ['purchases', ' Purchases'],
+  ['sales', ' Sales'],
+  ['suppliers', ' Suppliers'],
+  ['alerts', ' Alerts'],
+  ['reports', ' Reports'],
+  ['users', ' Users'],
+  ['audit', ' Audit Log'],
   ['account', '⚙️ Account'],
 ];
 function navVisible(key) {
