@@ -1,5 +1,13 @@
 # AURA — Inventory Management System
 
+## ▶ Live app
+
+**Open the working AURA system → https://aura-inventory-2-production.up.railway.app**
+
+*Sign in with the sample accounts below. This GitHub page is documentation only — the app itself runs at the link above.*
+
+---
+
 A professional, self-contained **inventory management system for AURA**, a clothing brand: products with stock **per size**, suppliers, purchases and sales that update stock automatically, inventory alerts, financial reports, and role-based user accounts. See `ARCHITECTURE.md` for the design (architecture, relational schema, modules).
 
 > **Current data is sample data.** The system is seeded with clearly-labelled *Sample* products, suppliers, transactions and accounts so every workflow can be seen working. AURA has no website yet, so the real catalogue, suppliers and branding are to be supplied by the brand and swapped in.
